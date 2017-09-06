@@ -31,7 +31,7 @@ class Numbers extends Component {
             <tr>
                 <td className="numbers" onClick={this._clearHandler}>clr</td>
                 <td className="numbers" onClick={this._negPosHandler}>+/-</td>
-                <td className="numbers" onClick={this._backHandler}><img src="back.png" alt="back" /></td>
+                <td className="numbers" onClick={this._backHandler}><img className="back-arrow" src="back.png" alt="back" /></td>
                 <td className="operators" onClick={this._numberOperationHandler}>/</td>
             </tr>
             <tr>

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {BrowserRouter, Route, Switch, Link} from 'react-router-dom';
+import {BrowserRouter, Route, Switch, NavLink} from 'react-router-dom';
 import './App.css';
 import Calculator from "./Calculator.js";
 import Marta from "./Marta.js";
@@ -11,11 +11,14 @@ class App extends Component {
       <div className="App">
         <BrowserRouter>
             <div>
-                <ul className="nav">
-                    <li><Link to="/Worldclocks">World Clocks</Link></li>
-                    <li><Link to="/Realculator">React Calculator</Link></li>
-                    <li><Link to="/Martah">Martah Train Tracker</Link></li>
-                </ul>
+                <div className="navbar">
+                    <NavLink to="/" exact activeStyle={{color: '#F9CF00'}}>Home</NavLink>
+                    <ul className="nav">
+                        <li><NavLink to="/Worldclocks" activeStyle={{color: '#F9CF00'}}>World Clocks</NavLink></li>
+                        <li><NavLink to="/Realculator" activeStyle={{color: '#F9CF00'}}>Realculator</NavLink></li>
+                        <li><NavLink to="/Martah" activeStyle={{color: '#F9CF00'}}>Martah Train Tracker</NavLink></li>
+                    </ul>
+                </div>
                 <Switch>
                     <Route exact path = "/Worldclocks" component={Clock} />
                     <Route path = "/Realculator" component={Calculator} />

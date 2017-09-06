@@ -74,14 +74,29 @@ td {
 .calculator {
   text-align: center;
   font-size: 4em;
-  padding-top: 2em;
+  padding-top: .5em;
   margin: 0 auto;
+}
+
+.back-arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .calculator table,
 .calculator th,
 .calculator td {
     border: 1px solid black;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #4484CE;
+    height: 3.5em;
+    max-width: 100%;
+    margin: 0;
 }
 
 .nav {
@@ -90,22 +105,18 @@ td {
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
-    background-color: #4484CE;
-    height: 3em;
-    max-width: 100%;
-    margin: 0;
 }
 
-.nav a {
+.navbar a {
     text-decoration: none;
     color: #FFF;
 }
 
-.nav a:hover {
+.navbar a:hover {
     color: #F9CF00;
 }
 
-.nav li {
+.navbar a {
     margin: 0 1em;
     font-size: 1.5em;
 }
