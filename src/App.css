@@ -46,6 +46,20 @@
     color: #DAA520;
 }
 
+.operators {
+    background-color: #F19F4D;
+    color: #fff;
+}
+
+.numbers {
+    background-color: #D9D9D9;
+}
+
+.calcdisplay {
+    background-color: #4484CE;
+    color: #fff;
+}
+
 table:hover {
     cursor: default;
 }
