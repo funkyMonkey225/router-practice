@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {BrowserRouter, Route, Switch, Link} from 'react-router-dom';
 import './App.css';
 import Calculator from "./Calculator.js";
+import Marta from "./Marta.js";
 
 class App extends Component {
   render() {
@@ -17,7 +18,7 @@ class App extends Component {
                 <Switch>
                     {/*<Route exact path = "/Worldclocks" component={} />*/}
                     <Route path = "/Realculator" component={Calculator} />
-                    {/*<Route path = "/Martah" component={} />*/}
+                    <Route path = "/Martah" component={Marta} />
                     <Route render={() => (
                         <p>Page not found: No Soup for you!</p>
                         )} />

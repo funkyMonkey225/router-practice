@@ -18,9 +18,32 @@
   font-size: large;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.marta-dashboard {
+    margin: 0 auto;
+}
+
+.marta-dashboard td {
+    padding: .5em .75em;
+}
+
+.boarding {
+    background-color: #00b300;
+    color: white
+}
+.blue {
+    color: blue;
+}
+
+.green {
+    color: #145A32;
+}
+
+.red {
+    color: red;
+}
+
+.gold {
+    color: #DAA520;
 }
 
 table:hover {
@@ -32,4 +55,9 @@ td {
 }
 .options {
     padding: 0 .5em;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
 }
