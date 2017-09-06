@@ -40,8 +40,9 @@ class Marta extends Component {
     render() {
         const {filterDest, filterDir, filterStat, filterLine} = this.state
     return (
-      <div>
+      <div className="marta">
           <h1>Welcome to Martaaaaagghhhh</h1>
+          <img src="marta-train-map.jpg" alt="Marta train map"/>
           <p>Please select your preferences to filter the information.</p>
           <UserFilter 
             destHandler={this._handleDestInput}

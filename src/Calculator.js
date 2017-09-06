@@ -132,16 +132,16 @@ class Calculator extends Component {
 
   render() {
     return (
-    <table className="calculator">
-        <Display display={this.state.display}/>
-        <Numbers 
-            numberHandler={this._numberOperationHandler}
-            clearHandler={this._clearHandler}
-            resultHandler={this._resultHandler}
-            backHandler={this._backHandler}
-            negPosHandler={this._negPosHandler}
-        />
-    </table>
+        <table className="calculator">
+            <Display display={this.state.display}/>
+            <Numbers 
+                numberHandler={this._numberOperationHandler}
+                clearHandler={this._clearHandler}
+                resultHandler={this._resultHandler}
+                backHandler={this._backHandler}
+                negPosHandler={this._negPosHandler}
+            />
+        </table>
     );
   }
 }
