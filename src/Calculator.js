@@ -132,7 +132,7 @@ class Calculator extends Component {
 
   render() {
     return (
-    <table>
+    <table className="calculator">
         <Display display={this.state.display}/>
         <Numbers 
             numberHandler={this._numberOperationHandler}

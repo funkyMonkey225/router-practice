@@ -11,7 +11,7 @@ class App extends Component {
       <div className="App">
         <BrowserRouter>
             <div>
-                <ul>
+                <ul className="nav">
                     <li><Link to="/Worldclocks">World Clocks</Link></li>
                     <li><Link to="/Realculator">React Calculator</Link></li>
                     <li><Link to="/Martah">Martah Train Tracker</Link></li>
